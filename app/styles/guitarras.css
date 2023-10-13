@@ -1,0 +1,66 @@
+.guitarras-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4rem ;
+}
+
+@media (min-width: 768px){
+    .guitarras-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 992px){
+    .guitarras-grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.guitarra{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    align-items: center;
+    max-width: 50rem;
+    margin: 0 auto;
+}
+
+.guitarra .contenido{
+    padding: 1.5rem;
+}
+.guitarra .precio{
+    padding-bottom: 1.5rem;
+    font-weight: 900;
+    font-size: 3rem;
+}
+.guitarra .enlace{
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    background: var(--black);
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.3rem;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.guitarra .enlace:hover{
+    background: var(--primary);
+}
+.guitarra .contenido h3{
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: var(--primary);
+}
+.guitarra .descripcion{
+   display: -webkit-box;
+   -webkit-box-orient: vertical;
+   -webkit-line-clamp: 6;
+   overflow: hidden;
+   font-size: 1.8rem;
+}
+
+
+
+
+
+

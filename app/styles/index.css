@@ -1,0 +1,131 @@
+:root {
+    --primary: #e99401;
+    --black: #262626;
+    --white: #FFF;
+    --fuente-principal: 'Outfit', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 2rem;
+    font-family: var(--fuente-principal);
+    line-height: 1.5;
+
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+[class*="contenedor"],
+main {
+    width: min(95%, 120rem);
+    margin: 3rem auto;
+}
+
+[class*="heading"] {
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 900;
+    color: var(--primary);
+    margin: 5rem 0;
+}
+
+/**Header**/
+
+.header{
+    background-image: linear-gradient(to right, rgb(0 0 0 / .7), rgb(0 0 0 / .6)), url(/img/header.jpg);
+    padding:  6rem 0;
+    background-size: cover;
+    background-position: center;
+}
+
+.header .logo{
+    width: 25rem;
+}
+
+.barra{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .barra{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.header .navegacion{
+    display: flex;
+    gap: 2rem ;
+}
+.header .navegacion a{
+    color: var(--white);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1em;
+    padding: .5rem;
+    transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.header .navegacion a:hover,
+.header .active {
+    background-color: var(--primary);
+}
+
+/**Footer**/
+.footer{
+    background-color: var(--black);
+    padding: 5rem 0;
+}
+
+.footer .navegacion{
+    display: flex;
+        gap: 2rem;
+        
+}
+
+.footer .navegacion a,
+.copyright {
+    color: var(--white);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1em;
+    padding: .5rem;
+    transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.footer .contenido{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--white);
+}
+
+.error {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 10rem;
+}
+.error_enlace {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 10rem;
+    display: block;
+}
+
