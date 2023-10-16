@@ -1,0 +1,15 @@
+.contenido{
+display: grid;
+gap: 5rem;
+}
+
+@media(min-width: 768px){
+    .contenido{
+        grid-template-columns: 3fr 2fr;
+    }
+}
+
+.resumen{
+    background: #f9fafB;
+    padding: 3rem;
+    border-radius: 1.5rem;}

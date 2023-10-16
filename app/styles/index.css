@@ -129,3 +129,18 @@ main {
     display: block;
 }
 
+ .enlace {
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    background: var(--black);
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1.2rem;
+    font-size: 1.3rem;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.navegacion img{
+    width: 2.5rem;
+}
