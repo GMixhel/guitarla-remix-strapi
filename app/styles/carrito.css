@@ -1,5 +1,6 @@
 .contenido{
 display: grid;
+align-items: flex-start;
 gap: 5rem;
 }
 
@@ -12,4 +13,58 @@ gap: 5rem;
 .resumen{
     background: #f9fafB;
     padding: 3rem;
-    border-radius: 1.5rem;}
+    border-radius: 1.5rem;
+    position: sticky;
+    top: 2rem;
+}
+
+.producto {
+    display: grid;
+    grid-template-columns: 1fr 3fr ;
+    align-items: center;
+    padding: 3rem 0;
+    border-bottom: 1px solid #cfcfcf;
+    position: relative;
+}
+.producto:last-of-type{
+    border-bottom: none;
+}
+.producto p{
+   padding-bottom: 1rem;
+}
+.producto span{
+   font-size: 3.2rem;
+   font-weight: 900;
+}
+
+.nombre{
+    font-weight: 700;
+    font-size: 4.2rem;
+}
+.precio{
+font-weight: 700;
+color:var(--primary);
+}
+.subtotal{
+font-size: 2.2rem;
+}
+
+.select{
+    all: unset;
+    border: 1px solid #cfcfcf;
+    text-align: center;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.btn_eliminar{
+    all: unset;
+    position: absolute;
+    top: 3rem;
+    right: 1rem;
+    
+}
+.btn_eliminar:hover{
+cursor: pointer;
+}
